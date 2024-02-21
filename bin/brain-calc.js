@@ -1,10 +1,10 @@
 #!/usr/bin/env node
+import randomInt from '../src/utils/randomInt.js';
 import createGame from '../src/index.js';
 
 export default function brainCalcGame(name) {
   const description = 'What is the result of the expression?';
   const gameCallBack = () => {
-    const randomInt = () => Math.floor(Math.random() * 10);
     const operators = [
       {
         sign: '+',
@@ -20,8 +20,8 @@ export default function brainCalcGame(name) {
       },
     ];
     const randomOperator = Math.floor(Math.random() * operators.length);
-    const firstNumber = randomInt();
-    const secondNumber = randomInt();
+    const firstNumber = randomInt(10);
+    const secondNumber = randomInt(10);
     const correctAnswer = operators[randomOperator].method(firstNumber, secondNumber);
     return {
       question: `${firstNumber} ${operators[randomOperator].sign} ${secondNumber}`,

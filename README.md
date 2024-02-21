@@ -3,6 +3,6 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/ba3bc7f28e622ec01958/maintainability)](https://codeclimate.com/github/sofia1alekseeva/backend-project-lvl1/maintainability)
 
-## Демонстрационные игры:
+### Демонстрационные игры:
 
-* Even: https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7
+https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7
