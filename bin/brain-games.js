@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-import askQuestion from '../src/cli.js';
+import helloAndGetName from '../src/cli.js';
+import brainEvenGame from './brain-even.js';
 
 console.log('Welcome to the Brain Games!');
-askQuestion('May I have your name? ');
+const name = helloAndGetName();
+brainEvenGame(name);
