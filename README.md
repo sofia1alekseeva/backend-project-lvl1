@@ -8,5 +8,7 @@
 https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7
 
 ### При первом клонировании репозитория вызвать:
-npm ci
-npm link
+* make start
+
+### Запуск:
+* brain-<gamename> // например: brain-even
