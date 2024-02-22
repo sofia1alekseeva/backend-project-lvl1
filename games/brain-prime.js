@@ -7,7 +7,7 @@ export default function brainPrimeGame(name) {
   const gameCallBack = () => {
     const int = randomInt(1, 10);
     let correctAnswer = 'yes';
-    for (let i = int - 1; i > 1; i--) {
+    for (let i = int - 1; i > 1; i -= 1) {
       if (int % i === 0) {
         correctAnswer = 'no';
       }
