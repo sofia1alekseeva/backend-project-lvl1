@@ -15,15 +15,16 @@ export default function brainProgressionGame(name) {
     const answerIndex = Math.floor(Math.random() * progressionArray.length);
     const correctAnswer = progressionArray[answerIndex].toString();
     const question = progressionArray.reduce((acc, cur, index) => {
+      let result = '';
       if (index === answerIndex) {
-        acc += '..';
+        result += '..';
       } else {
-        acc += cur;
+        result += cur;
       }
       if (index !== progressionArray.length - 1) {
-        acc += ' ';
+        result += ' ';
       }
-      return acc;
+      return acc + result;
     }, '');
 
     return {

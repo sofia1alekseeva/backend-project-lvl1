@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 
 export default function createGame(name, description, gameCallback) {
   console.log(description);
-  for (let i = 1; i <= 3; i++) {
+  for (let i = 1; i <= 3; i += 1) {
     const { correctAnswer, question } = gameCallback();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');

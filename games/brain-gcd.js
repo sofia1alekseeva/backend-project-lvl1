@@ -9,7 +9,7 @@ export default function brainGCDGame(name) {
     const secondNumber = randomInt(1, 100);
     const smallestNumber = firstNumber < secondNumber ? firstNumber : secondNumber;
     let correctAnswer;
-    for (let i = smallestNumber; i >= 1; i--) {
+    for (let i = smallestNumber; i >= 1; i -= 1) {
       if (firstNumber % i === 0 && secondNumber % i === 0) {
         correctAnswer = i.toString();
         i = 0;
