@@ -19,12 +19,12 @@ export default function brainCalcGame(name) {
         method: (a, b) => a * b,
       },
     ];
-    const randomOperator = Math.floor(Math.random() * operators.length);
-    const firstNumber = randomInt(10);
-    const secondNumber = randomInt(10);
-    const correctAnswer = operators[randomOperator].method(firstNumber, secondNumber);
+    const randomOperatorIndex = Math.floor(Math.random() * operators.length);
+    const firstNumber = randomInt(0, 100);
+    const secondNumber = randomInt(0, 100);
+    const correctAnswer = operators[randomOperatorIndex].method(firstNumber, secondNumber);
     return {
-      question: `${firstNumber} ${operators[randomOperator].sign} ${secondNumber}`,
+      question: `${firstNumber} ${operators[randomOperatorIndex].sign} ${secondNumber}`,
       correctAnswer: `${correctAnswer}`,
     };
   };
